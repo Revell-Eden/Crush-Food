@@ -7,12 +7,12 @@ function extendMenu() {
   if (subMenu.style.display === "flex"){
     subMenu.style.display = "none";
     console.log("close");
-    nav.style.height = "3em";
+    nav.style.height = "4em";
     toggle.classList.add('.menuClose');
   } else {
     subMenu.style.display = "flex";
     console.log("open");
-    nav.style.height = "5em";
+    nav.style.height = "6em";
     toggle.classList.add('.menuOpen');
 }   
 }
