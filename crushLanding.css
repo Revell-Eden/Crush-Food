@@ -1,4 +1,7 @@
 /* Landing Elements */
+*{
+    font-family: monospace;
+}
 .headBanner {
     display: block;
     position: relative;
@@ -25,13 +28,93 @@ label {
 
 }
 p {
-    text-align: left;
+    text-align: center;
     padding: 1em 0.5em;
 }
 .loginBtn {
     border-radius: 1em;
     background-color:rgb(255, 85, 85);
     border: none;
-    width: 50%;
-    margin-bottom: 0.5em;;
+    width: 6em;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+    font-family: monospace;
+    display: block;
+}
+.topPicks {
+    background-color: transparent;
+    padding: 1em 1em;
+    border-radius: 0.5em;
+}
+.pickGallery {
+    background-color: #fff;
+    padding: 0.5em;
+    display: flex;
+    margin-bottom: 0.5em;
+    overflow: auto;
+    white-space: nowrap;
+}
+.pickCard {
+    background-color: rgb(255, 85, 85);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 40em;
+    box-shadow: 0.5em 0.5em #000;
+    margin-right: 0.5em;
+}
+.couplet {
+    width: 100%;
+}
+label {
+    font-size: 1.5em;
+}
+.pantry {
+    margin: auto;
+}
+.redTxt {
+    color: rgb(255, 85, 85);
+    padding: 0;
+    font-size: 1.5em;
+}
+.todaysCnt {
+    background-color: #fff;
+    border-radius: 0.5em;
+}
+.todaysTitle {
+    color: #fff;
+    display: block;
+}
+.todaysImg {
+    width: 100%;
+    max-height: 16em;
+}
+#scrollBar {
+    background: rgb(209, 208, 208);
+    height: 0.5em;
+    width: 100%;
+    border-radius: 0.5em;
+    border: 1px solid #000;
+}
+.logDirectory {
+    background-color: rgb(255, 85, 85);
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+.logLabel {
+    font-size: 1em;
+    display: block;
+    background-color: rgb(255, 85, 85);
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+}
+form {
+    background-color: #fff;
+}
+input {
+    border: none;
+    border-bottom: 3px solid rgb(255, 85, 85);
+    margin-bottom: 2em;
+    padding: 0.25em;
 }
