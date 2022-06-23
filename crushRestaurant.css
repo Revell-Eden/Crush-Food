@@ -1,0 +1,41 @@
+* {
+    font-family: monospace;
+}
+.bannerImg {
+    width: 70%;
+}
+.recipeBox {
+    background-color: rgb(255, 85, 85);
+    border-radius: 1em;
+    padding: 0.25em 1em 0.5em 1em;
+}
+.recipeBoxLabel {
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+.recipeGallery {
+    background-color: #fff;
+    padding: 0.5em;
+    display: flex;
+}
+.recipe {
+    background-color: rgb(255, 85, 85);
+    border-radius: 0.25em;
+    width: 30%;
+    box-shadow: -0.1em 0.1em #000;
+    display: block;
+}
+.recipeImg {
+    width: 50%;
+}
+.recipeLabel {
+}
+.recipeCnt {
+    font-size: 0.75em;
+}
