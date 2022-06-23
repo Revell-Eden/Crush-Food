@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush-Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="crushNav.css">
+    <link rel="stylesheet" type="text/css" href="crushRestaurant.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <section>
+        <nav>
+            <ul>
+                
+                <div class="subMenu">
+                        <li><ion-icon id="today" class="listTag" name="today" onclick="scrollToday()"></ion-icon><a></a></li>
+                        <li><ion-icon class="listTag" name="add"></ion-icon></li>
+                        <li><ion-icon class="listTag" name="restaurant"><a href="crushRestaurant.html"></a></ion-icon></li>
+                        <li><ion-icon class="listTag" name="options"></ion-icon></li>
+                </div>
+                <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
+                <!-- <li>Profile</li> -->
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <img class="bannerImg" src="crushImages/restaurant.jpg">
+    </section>
+
+    <section>
+        <div class="recipeBox">
+            <label class="recipeBoxLabel"><ion-icon class="icon" name="paper"></ion-icon>
+                <h3>Recipe Box:</h3>
+            </label>
+            <div class="recipeGallery">
+                <div class="recipe">
+                    <label class="recipeLabel">Label:</label>
+                    <img id="recipeImg" src="...">
+                    <p class="recipeCnt">Example content of recipe.</p>
+                </div>
+                <div class="recipe">!</div>
+                <div class="recipe">!</div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+<script src="extendMenu.js"></script>
+<script src="scrollTo.js"></script>
+
+</body>
+</html>
