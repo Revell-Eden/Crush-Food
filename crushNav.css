@@ -1,0 +1,134 @@
+/* Navbar Css */
+
+* {
+    font-size: 1em;
+    margin: auto;
+}
+body {
+    background-color: #fff;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 1em;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 85, 85);
+    border-radius: 0.5em;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 134, 134);
+}
+nav {
+    background-color: rgb(255, 85, 85);
+    border-radius: 0 0 0.5em 0.5em;
+    box-shadow: 0 0.5em #000;
+    height: 4em;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    padding-bottom: 0.5em;
+    display: block;
+}
+nav ul {
+    display: block;
+    line-height: 4em;
+    padding-left: 0;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 1em 0.5em 0 0.5em;
+}
+.navList {
+    display: flex;
+}
+nav ul li{
+    background-color: rgb(255, 85, 85);
+    font-size: 1em;
+    margin-left: 3em;
+    text-align: center;
+    list-style: none;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    vertical-align: 1.75em;
+    color: #000;
+}
+nav ul li a {
+    color: #000;
+}
+nav ul li:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+.listTag {
+    width: 1.5em;
+    height: 1.5em;
+    color: #fff;
+}
+.listTag:hover {
+    color: #000;
+}
+.menuToggle {
+    color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0.5em 0;
+}
+.menuClose {
+    animation: menuClose 0.5s linear ease-out;
+} 
+.menuOpen {
+    animation: menuOpen 0.5s linear ease-out;
+}
+.subMenu {
+    height: 2em;
+    margin: 0 0.5em 1em 0;
+    background-color: #fff;
+    display: none;
+    border-radius: 1em;
+    display: none;
+}
+.profile {
+    width: 4em;
+    height: 4em;
+    opacity: 100%;
+    color: #000;
+    margin-right: 0.5em;
+    margin-left: -0.5em;
+    margin-top: -1em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+@keyframes menuClose {
+    0% {
+        transform: translateX(0.5em);
+    }
+    25% {
+        transform: translateX(0em);
+    }
+    50% {
+        transform: translateX(-0.5em);
+    }
+    100% {
+        transform: translateX(0em);
+    }
+}
+@keyframes menuOpen {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(90deg);
+    }
+}
+/* Today Elements Section */
