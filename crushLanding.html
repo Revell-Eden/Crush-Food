@@ -15,10 +15,13 @@
             <ul>
                 
                 <div class="subMenu">
+                    <span class="profile"><ion-icon class="listTag" name="person-circle-outline"></ion-icon></span>
+                    <div class="navList">
                         <li><ion-icon id="today" class="listTag" name="today" onclick="scrollToday()"></ion-icon><a></a></li>
                         <li><ion-icon class="listTag" name="add"></ion-icon></li>
-                        <li><ion-icon class="listTag" name="restaurant"></ion-icon></li>
+                        <li><ion-icon class="listTag" name="restaurant"><a href="crushRestaurant.html"></a></ion-icon></li>
                         <li><ion-icon class="listTag" name="options"></ion-icon></li>
+                    </div>
                 </div>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
                 <!-- <li>Profile</li> -->
@@ -32,8 +35,15 @@
             <article class="bannerText">
                 <label>&#127813;</label>
                 <p>Welcome to your personal recipe box!</p>
-                <a class="loginBtn" href="crushLogin.html">LogIn</a>
-                <a class="loginBtn">Register</a>
+                <a id="login" class="loginBtn" onclick="loginWindow()">LogIn</a>
+                <a id="register" class="loginBtn" href="crushLogin.html">Register</a>
+                <div class="logDirectory">
+                    <form>
+                        <label class="logLabel">// Enter your keys to the castle here //</label>
+                        <input type="text" placeholder="Username or Email">
+                        <input type="password" placeholder="Password">
+                    </form>
+                </div>
             </article>
         </div>
     </section>
@@ -47,16 +57,25 @@
             </div>
             <div class="pickGallery">
                 <div class="pickCard">
-                    <article>
-                        <label class="todaysTitle">id</label>
+                    <article class="pickable">
+
                         <img class="todaysImg" src="crushImages/lasagna.jpg">
-                        <p class="todaysCnt">Cnt</p>
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #2 -->
+                        <img class="todaysImg" src="crushImages/pumpkinRisotto.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #3 -->
+                        <img class="todaysImg" src="crushImages/salmonPot.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #4 -->
+                        <img class="todaysImg" src="crushImages/salad.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #5 -->
+                        <img class="todaysImg" src="crushImages/falafelBoard.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
                     </article>
-                    
                 </div>
-            
             </div>
-            <div id="scrollBar"></div>
         </div>
     </section>
 <!-- <li><a>Searchbar</a></li> -->
@@ -64,5 +83,6 @@
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 <script src="extendMenu.js"></script>
 <script src="scrollTo.js"></script>
+<script src="windowControl.js"></script>
 </body>
 </html>
