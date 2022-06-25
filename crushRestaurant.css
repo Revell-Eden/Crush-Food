@@ -1,19 +1,27 @@
 * {
     font-family: monospace;
+    margin: auto;
 }
 .bannerImg {
-    width: 70%;
+    margin-top: 2em;
+    width: 100%;
+    height: 30em;
 }
 .recipeBox {
     background-color: rgb(255, 85, 85);
     border-radius: 1em;
     padding: 0.25em 1em 0.5em 1em;
+    top: 35em;
+    left: 2.5em;
+    right: 2.5em;
+    position: absolute;
 }
 .recipeBoxLabel {
     color: #fff;
     text-align: center;
     flex-direction: column;
     display: flex;
+    padding: 0.5em;
 }
 .icon {
     width: 1.5em;
@@ -21,21 +29,69 @@
 }
 .recipeGallery {
     background-color: #fff;
-    padding: 0.5em;
+    padding: 1em 0.5em;
     display: flex;
+    flex-wrap: wrap;
+    height: 14em;
 }
 .recipe {
-    background-color: rgb(255, 85, 85);
+    background-color: rgb(216, 201, 169);
     border-radius: 0.25em;
     width: 30%;
     box-shadow: -0.1em 0.1em #000;
     display: block;
+    min-height: 7em;
+    box-shadow: 0 -0.25em rgb(66, 57, 39);
+    perspective: 1000;
+}
+.recipe:hover {
+    animation: 0.5s recipe linear ease-in-out;
+}
+@keyframes recipe {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+.rtop {
+    margin-top: 0;
+}
+.rall {
+    margin-top: -8.5em;
+}
+.recipeLabel  {
+    padding: 0.25em 0.5em;
 }
 .recipeImg {
-    width: 50%;
+    width: 100%;
 }
-.recipeLabel {
+.recipeSection {
+    margin: auto;
 }
 .recipeCnt {
     font-size: 0.75em;
+    padding: 0.5em;
+}
+.bannerText {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    right: 0;
+    top: 16em;
+    padding: 1em;
+    width: 100%;
+    height: 20%;
+    font-size: 1em;
+    text-align: center;
+}
+.bannerText p {
+    padding: 0.5em 1em;
+}
+#recipeImg {
+    width: 100%;
+    padding-top: 0.25em;
+    z-index: -1;
 }
