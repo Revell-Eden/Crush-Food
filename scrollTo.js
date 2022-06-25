@@ -14,5 +14,4 @@ function topPickScroll() {
     pickable.scrollLeft += 440;
     console.log("Top Choice window scrolled");
     console.log('scrolled');
-
 }
