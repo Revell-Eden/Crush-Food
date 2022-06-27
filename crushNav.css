@@ -64,6 +64,10 @@ nav ul li{
 }
 nav ul li a {
     color: #000;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    z-index: 100;
 }
 nav ul li:hover {
     cursor: pointer;
@@ -103,8 +107,6 @@ nav ul li:hover {
     height: 4em;
     opacity: 100%;
     color: #000;
-    margin-right: 0.5em;
-    margin-left: -0.5em;
     margin-top: -1em;
     background-color: #fff;
     border-radius: 50%;
@@ -137,11 +139,12 @@ nav ul li:hover {
     border-radius: 3em;
     padding: 3em;
     box-shadow: 0.5 -0.5em #000;
-    position: absolute;
     position: fixed;
     z-index: 90;
-    top: 25%;
-    left: 25%;
+    right: 0;
+    bottom: 0;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
     display: none;
 }
 .settings ul {
@@ -178,40 +181,5 @@ nav ul li:hover {
 }
 .exit {
     transform: rotateZ(90deg);
-}
-.settingsExit {
-    animation: 1s exiting linear ease-out; 
-}
-.profile {
-    display: none;
-    background-color: rgb(255, 85, 85);
-    border-radius: 3em;
-    padding: 3em;
-    box-shadow: 0.5 -0.5em #000;
-    position: absolute;
-    position: fixed;
-    z-index: 90;
-    top: 25%;
-    left: 25%;
-}
-.porfile label {
-    color: #fff;
-}
-@keyframes exiting {
-    0% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(1em);
-    }
-    50% {
-        transform: translateY(2em);
-    }
-    75% {
-        transform: translateY(3em);
-    }
-    100% {
-        transform: translateY(4em);
-    }
 }
 /* Today Elements Section */
