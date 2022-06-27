@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush-profile</title>
+    <link rel="stylesheet" type="text/css" href="crushNav.css">
+    <link rel="stylesheet" type="text/css" href="crushProfile.css">
+</head>
+<body>
+    <!-- Settings Menu -->
+    <section id="setSection">
+        <div class="settings">
+            <ul>
+                <li><ion-icon class="icon" name="contacts" ahref="crushProfile.html"></ion-icon> Profile</li>
+                <li><ion-icon class="icon" name="refresh-circle"></ion-icon><a href="crushHistory.html"></a> Make it again!</li>
+                <li><ion-icon class="icon" name="pricetag"></ion-icon> Membership</li>
+                <li><ion-icon class="icon exit" name="backspace" onclick="extendSettingsMenu()"></ion-icon></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <section>
+        <nav>
+            <ul>
+                <div class="subMenu">
+                    <span class="profile"><ion-icon class="listTag" name="person-circle-outline"></ion-icon></span>
+                    <div class="navList">
+                        <li><ion-icon id="today" class="listTag" name="today"><a href="crushLanding.html"></a></ion-icon></li>
+                        <li><ion-icon class="listTag" name="add"></ion-icon></li>
+                        <li><ion-icon class="listTag" name="restaurant"><a href="crushRestaurant.html"></a></ion-icon></li>
+                        <li><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
+                    </div>
+                </div>
+                <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Registeration not found -->
+    <section class="registerSect">
+        <div class="registrationAwait">
+            <label class="headLabel">Registration:</label>
+            <a href="crushLogin.html"> Become a member </a> <p> In order to:
+                <ul>
+                    <li>Save all your favourite recipes<br/>
+                    <li>Track healthy eating progress<br/>
+                    <li>Add to the culinary library. </p>
+                </ul>
+        </div>
+    </section>
+
+    <!-- Profile Information -->
+    <section>
+        <div class="profileBox">
+            <div class="profileAlign">
+                <span class="profile headAlign"></span>
+                <label class="profileLabel headAlign">Profile:</label>
+            </div>
+            <div class="profileCnt">
+                <div class="activity">
+                    <span>Activity:</span>
+                </div>
+                <div class="history">
+                    <span>History:</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="extendMenu.js"></script>
+    <script src="windowControl.js"></script>
+
+</body>
+</html>
