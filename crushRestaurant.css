@@ -32,7 +32,8 @@
     padding: 1em 0.5em;
     display: flex;
     flex-wrap: wrap;
-    height: 14em;
+    height: 20em;
+    overflow: hidden;
 }
 .recipe {
     background-color: rgb(216, 201, 169);
@@ -45,21 +46,15 @@
     perspective: 1000;
 }
 .recipe:hover {
-    animation: 0.5s recipe linear ease-in-out;
+    animation: 0.5s recipeSelect linear ease-in-out;
 }
-@keyframes recipe {
+@keyframes recipeSelect {
     0% {
         width: 30%;
     }
     100% {
         width: 70%;
     }
-}
-.rtop {
-    margin-top: 0;
-}
-.rall {
-    margin-top: -8.5em;
 }
 .recipeLabel  {
     padding: 0.25em 0.5em;
@@ -92,6 +87,5 @@
 }
 #recipeImg {
     width: 100%;
-    padding-top: 0.25em;
     z-index: -1;
 }

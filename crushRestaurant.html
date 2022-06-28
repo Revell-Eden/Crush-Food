@@ -10,21 +10,18 @@
 </head>
 <body>
      <!-- Navbar -->
-    <section>
+     <section>
         <nav>
             <ul>
-                
                 <div class="subMenu">
-                    <span class="profile"><ion-icon class="listTag" name="person-circle-outline"></ion-icon></span>
                     <div class="navList">
-                        <li><ion-icon id="today" class="listTag" name="today" onclick="scrollToday()"></ion-icon><a></a></li>
-                        <li><ion-icon class="listTag" name="add"></ion-icon></li>
-                        <li><ion-icon class="listTag" name="restaurant"><a href="crushRestaurant.html"></a></ion-icon></li>
-                        <li><ion-icon class="listTag" name="options"></ion-icon></li>
+                        <li><ion-icon class="listTag" name="contact"></ion-icon><a href="crushProfile.html"></a></li>
+                        <li id="today"><ion-icon class="listTag" name="today" onclick="scrollToday()" href="crushLanding.html"></ion-icon></li>
+                        <li><ion-icon class="listTag" name="bookmarks"><a href="crushRestaurant.html"></a></ion-icon></li>
+                        <li><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
                     </div>
                 </div>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
-                <!-- <li>Profile</li> -->
             </ul>
         </nav>
     </section>
@@ -44,47 +41,47 @@
                 <h3>Recipe Box:</h3>
             </label>
             <div class="recipeGallery">
-                <div class="recipe rtop">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rtop">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rtop">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rall">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rall">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rall">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rall">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rall">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
                 </div>
-                <div class="recipe rall">
+                <div class="recipe">
                     <label class="recipeLabel">Label:</label>
                     <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
                     <p class="recipeCnt">Example content of recipe.</p>
@@ -95,7 +92,6 @@
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 <script src="extendMenu.js"></script>
-<script src="scrollTo.js"></script>
 
 </body>
 </html>
