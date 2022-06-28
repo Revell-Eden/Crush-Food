@@ -9,6 +9,31 @@
     <link rel="stylesheet" type="text/css" href="crushLanding.css">
 </head>
 <body>
+    <!-- Settings Menu -->
+    <section id="setSection">
+        <div class="settings">
+            <ul>
+                <li><ion-icon class="icon" name="contacts" onclick="extendProfileMenu()"></ion-icon> Profile</li>
+                <li><ion-icon class="icon" name="refresh-circle"></ion-icon><a href="crushHistory.html"></a> Make it again!</li>
+                <li><ion-icon class="icon" name="pricetag"></ion-icon> Membership</li>
+                <li><ion-icon class="icon exit" name="backspace" onclick="extendSettingsMenu()"></ion-icon></li>
+            </ul>
+        </div>
+
+        <div class="profileBox">
+                <label class="profileLabel">Profile: </label>
+                <div class="profile"></div>
+                <div class="profileCnt">
+                    <div class="activity">
+                        <span>Activity:</span>
+                    </div>
+                    <div class="history">
+                        <span>History:</span>
+                    </div>
+                </div>
+                <ion-icon class="icon exit" name="backspace" onclick="extendSettingsMenu()"></ion-icon>
+        </div>
+    </section>
     <!-- Navbar -->
     <section>
         <nav>
@@ -20,7 +45,7 @@
                         <li><ion-icon id="today" class="listTag" name="today" onclick="scrollToday()"></ion-icon><a></a></li>
                         <li><ion-icon class="listTag" name="add"></ion-icon></li>
                         <li><ion-icon class="listTag" name="restaurant"><a href="crushRestaurant.html"></a></ion-icon></li>
-                        <li><ion-icon class="listTag" name="options"></ion-icon></li>
+                        <li><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
                     </div>
                 </div>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
@@ -33,12 +58,12 @@
         <div class="headBanner">
             <img class="bannerImg" src="crushImages/banner1.jpg">
             <article class="bannerText">
-                <label>&#127813;</label>
-                <p>Welcome to your personal recipe box!</p>
+                <label class="headLabel">&#127813;</label>
+                <p>Welcome to your personal recipe box <label>&#128477;</label></p>
                 <a id="login" class="loginBtn" onclick="loginWindow()">LogIn</a>
                 <a id="register" class="loginBtn" href="crushLogin.html">Register</a>
                 <div class="logDirectory">
-                    <form>
+                    <form id="login" method="post" onsubmit="validateForm()">
                         <label class="logLabel">// Enter your keys to the castle here //</label>
                         <input type="text" placeholder="Username or Email">
                         <input type="password" placeholder="Password">
@@ -57,16 +82,25 @@
             </div>
             <div class="pickGallery">
                 <div class="pickCard">
-                    <article>
-                        <label class="todaysTitle">id</label>
+                    <article class="pickable">
+
                         <img class="todaysImg" src="crushImages/lasagna.jpg">
-                        <p class="todaysCnt">Cnt</p>
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #2 -->
+                        <img class="todaysImg" src="crushImages/pumpkinRisotto.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #3 -->
+                        <img class="todaysImg" src="crushImages/salmonPot.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #4 -->
+                        <img class="todaysImg" src="crushImages/salad.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #5 -->
+                        <img class="todaysImg" src="crushImages/falafelBoard.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
                     </article>
-                    
                 </div>
-            
             </div>
-            <div id="scrollBar"></div>
         </div>
     </section>
 <!-- <li><a>Searchbar</a></li> -->
@@ -75,5 +109,6 @@
 <script src="extendMenu.js"></script>
 <script src="scrollTo.js"></script>
 <script src="windowControl.js"></script>
+<script src="formControl.js"></script>
 </body>
 </html>
