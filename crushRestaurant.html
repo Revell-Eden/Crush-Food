@@ -89,9 +89,63 @@
             </div>
         </div>
     </section>
+
+    <!-- ADD RECIPE SECTION -->
+    <section>
+        <div class="add">
+            <label class="recipeBoxLabel">
+                <ion-icon class="icon" name="add"></ion-icon>
+                <h3>Add:</h3>
+            </label>
+            
+            <form id="newRecipe">
+                <label class="spanLabel">Recipe Name</label>
+                <input id="recipeLabel" type="text" placeholder="A descriptive Title">
+                <label class="spanLabel">Chef</label>
+                <input id="recipeAuthor" type="text" placeholder="Your name">
+                <div class="recipeAlign">
+                    <label class="segLabel">Prep Time</label>
+                    <input class="inpNum" id="prepTime" type="number" placeholder="30"><p class="helper">mins</p>
+                    <label class="segLabel">Cook Time</label>
+                    <input class="inpNum" id="cookTime" type="number" placeholder="60"><p class="helper">mins</p>
+                    <label class="segLabel">Preheat</label>
+                    <input class="inpNum" type="number" placeholder="160"><p>C</p>
+                    <div id="serves">
+                    <label class="segLabel">Serves</label>
+                    <input class="inpNum" type="number" placeholder="4">
+                    </div id="serves">
+                </div>
+                <article class="cntSbs">
+                <!-- Ingredients -->
+                <aside>
+                    <label class="spanLabel"> Ingredients </label>
+                    <a class="addBtn" onclick="addIngredient()"><ion-icon name="add"></ion-icon></a>
+                    <ol id="ingredients" class="ingList">
+                        <li class="ingredient"><input id="ingredients" type="text" placeholder="tomatoes"></li>
+                    </ol>
+                    
+                </aside>
+                <!-- Directions -->
+                <aside>
+                <label class="spanLabel">Directions</label>
+                <a class="addBtn" onclick="addDirection()"><ion-icon name="add"></ion-icon></a>
+                <div class="directions">
+                    <div class="directive">
+                        <ol id="solution">
+                            <li><input class="directInput" type="text" placeholder="direction"></li>
+                        </ol>
+                    </div>
+                    <!-- Placeholder Input -->
+                </div>
+                </aside>
+                </article>
+            </form>
+        </div>
+    </section>
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 <script src="extendMenu.js"></script>
+<script src="formControl.js"></script>
 
 </body>
 </html>

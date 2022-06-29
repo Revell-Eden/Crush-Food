@@ -34,23 +34,24 @@
     flex-wrap: wrap;
     height: 20em;
     overflow: hidden;
+    overflow: auto;
 }
 .recipe {
     background-color: rgb(216, 201, 169);
     border-radius: 0.25em;
-    width: 30%;
+    width: 32%;
     box-shadow: -0.1em 0.1em #000;
-    display: block;
+    display: flex;
+    flex-direction: column;
     min-height: 7em;
-    box-shadow: 0 -0.25em rgb(66, 57, 39);
-    perspective: 1000;
+    margin-bottom: 0.25em;
 }
 .recipe:hover {
     animation: 0.5s recipeSelect linear ease-in-out;
 }
 @keyframes recipeSelect {
     0% {
-        width: 30%;
+        width: 32%;
     }
     100% {
         width: 70%;
@@ -68,6 +69,7 @@
 .recipeCnt {
     font-size: 0.75em;
     padding: 0.5em;
+    overflow: auto;
 }
 .bannerText {
     background-color: rgba(0, 0, 0, 0.7);
@@ -87,5 +89,100 @@
 }
 #recipeImg {
     width: 100%;
-    z-index: -1;
+}
+.add {
+    background-color: rgb(168, 139, 105);
+    padding: 1em;
+    display: block;
+    border-radius: 1em;
+}
+#newRecipe {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #000;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+#newRecipe label {
+    color: #fff;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+.ingList {
+    list-style: disc;
+}
+input {
+    background-color: rgb(168, 139, 105);
+    border: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 0.5em;
+    width: max-content;
+    text-align: center;
+}
+.helper {
+    margin: 0.5em;
+}
+#recipeLabel {
+    width: 100%;
+}
+#recipeAuthor {
+    width: 100%;
+    margin: 0 10em;
+}
+.inpNum {
+    width: 2em;
+    margin: auto;
+}
+.spanLabel {
+    width: 100%;
+    text-align: center;
+}
+.segLabel {
+    vertical-align: 2em;
+    width: 5em;
+}
+.recipeAlign {
+    line-height: 2em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #000;
+}
+.addBtn {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    background-color: #fff;
+}
+#addDirection {
+    text-align: center;
+    font-size: 1em;
+}
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.75em;
+}
+.directive {
+    margin-right: 0.5em;
+}
+.active {
+    opacity: 50%;
+}
+.cntSbs {
+    display: flex;
+    margin-top: 1em;
+}
+aside {
+    width: 50%;
+    margin-top: 0;
+}
+#ingredients {
+    margin-top: 0.4em;
+}
+#serves {
+    margin: auto;
+    display: flex;
 }
