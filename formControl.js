@@ -19,16 +19,33 @@ function validateForm() {
     }
 }
 
-var form = document.getElementById('#register');
-function handleForm(event) {
-        event.preventDefault();
-    }
-form.addEventListener('submit', handleForm);
-alert("form submitted sucessfully");
+// Store
+function storeDetails() {
+localStorage.setItem("email", emailStored);
+localStorage.setItem("username", usernameStored);
+localStorage.setItem("password", passwordStored);
+}
+// Retrieve
+let storedUser = localStorage.getItem("email", "username", "password");
+console.log(storedUser);
 
-let registrationFormData = [];
-let formData = document.getElementsByClassName('.formData');
-registrationFormData = Array.prototype.filter.call(formData, function(formData) {
-    return formData.value;
-})
+/// Add Recipe Section ///
+function addDirection() {
+    document.querySelector('#solution').insertAdjacentHTML(
+        'beforeEnd',
+        `<li>
+        <input type="text" placeholder="direction">
+        </li>`
+    )
+    console.log("added");
+}
 
+function addIngredient() {
+    document.querySelector('#ingredients').insertAdjacentHTML(
+        'beforeEnd',
+        `<li>
+        <input id="directImput" type="text" placeholder="direction">
+        </li>`
+    )
+    console.log("added");
+}
