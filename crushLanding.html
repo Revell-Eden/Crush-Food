@@ -33,9 +33,9 @@
             <ul>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
                 <div class="navList">
-                    <li alt="Profile"><ion-icon class="listTag" name="contact"></ion-icon><a href="crushProfile.html"></a></li>
-                    <li id="today" alt="Todays Picks"><ion-icon class="listTag" name="today" onclick="scrollToday()" href="crushLanding.html"></ion-icon></li>
-                    <li alt="Recipe Collection"><ion-icon class="listTag" name="bookmarks"><a href="crushRestaurant.html"></a></ion-icon></li>
+                    <li alt="Profile"><a href="crushProfile.html"></a><ion-icon class="listTag" name="contact"></ion-icon></li>
+                    <li id="today" alt="Todays Picks"><a href="crushDaily.html"></a><ion-icon class="listTag" name="today" ></ion-icon></li>
+                    <li alt="Recipe Collection"><a href="crushRestaurant.html"></a><ion-icon class="listTag" name="bookmarks"></ion-icon></li>
                     <li alt="Settings"><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
                 </div>
             </ul>
@@ -51,10 +51,12 @@
                 <a id="login" class="loginBtn" onclick="loginWindow()">LogIn</a>
                 <a id="register" class="loginBtn" href="crushLogin.html">Register</a>
                 <div class="logDirectory">
-                    <form id="login" method="post" onsubmit="validateForm()">
-                        <label class="logLabel"><ion-icon name="person-add"></ion-icon></label>
-                        <input type="text" placeholder="Username or Email">
-                        <input type="password" placeholder="Password">
+                    <img id="loginImg" src="crushImages/loginBg.jpg">
+                    <form id="loginForm" method="post" onsubmit="validateForm()">
+                        <label id="logLabel"><ion-icon class="icon" name="person-add"></ion-icon></label>
+                        <input class="loginInput" type="text" placeholder="Username or Email">
+                        <input class="loginInput" type="password" placeholder="Password">
+                        <input id="submitBtn" type="submit">
                     </form>
                 </div>
             </article>
@@ -110,7 +112,15 @@
             </aside>
         </div>
     </section>
+<!-- Top Community Dish-->
+    <section>
+        <div class="pageBreaker">
+            <div id="communityDish">
+                <!-- Parse in Community top liked recipe for the week -->
 
+            </div>
+        </div>
+    </section>
 <!-- DEPENDENCIES -->
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>

@@ -1,7 +1,6 @@
 "use strict";
 
 let logBtn = document.querySelector('.loginBtn');
-    let profile= document.querySelector('.profile');
     let log = document.querySelector('.logDirectory');
     let register = document.getElementById('register');
     let login = document.getElementById('login');
@@ -9,12 +8,11 @@ let logBtn = document.querySelector('.loginBtn');
     let label = document.querySelector('.headLabel');
 
 function loginWindow() {
-    if (profile.style.display === "flex"){
-        profile.style.display = "none";
+    if (log.style.display === "flex"){
+        log.style.display = "none";
     } else {
-        profile.style.display = "flex";
+        log.style.display = "flex";
         console.log("profile active");
-        log.style.display = "block";
         register.style.display = "none";
         login.style.display = "none";
         bannerTxt.style.display = "none";
@@ -22,10 +20,10 @@ function loginWindow() {
     }   
 }
 function registerWindow() {
-    if (profile.style.display === "flex"){
-        profile.style.display = "none";
+    if (log.style.display === "flex"){
+        log.style.display = "none";
     } else {
-        profile.style.display = "flex";
+        log.style.display = "flex";
         console.log("profile active");
         log.style.display = "block";
         register.style.display = "none";

@@ -32,6 +32,14 @@
 .registrationAwait p ul li {
     text-decoration: none;
 }
+.profile {
+    text-align: center;
+    display: flex;
+}
+.profile ion-icon {
+    width: 3em;
+    height: 3em;
+}
 .profileBox {
     display: flex;
     background-color: rgb(255, 85, 85);
