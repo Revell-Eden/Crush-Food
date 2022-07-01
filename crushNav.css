@@ -5,8 +5,9 @@
     margin: auto;
 }
 body {
-    background-color: #fff;
+    background: linear-gradient(rgb(121, 255, 103), rgb(140, 255, 188));
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 1em;
@@ -27,40 +28,60 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(255, 134, 134);
 }
-nav {
-    background-color: rgb(255, 85, 85);
-    border-radius: 0 0 0.5em 0.5em;
-    box-shadow: 0 0.5em #000;
-    height: 4em;
-    position: fixed;
-    z-index: 50;
-    width: 100%;
-    padding-bottom: 0.5em;
+.headBanner {
     display: block;
+    position: relative;
+    flex-wrap: wrap;
+    background: transparent;
+    padding: 3em;
+}
+.bannerImg {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+.bannerText {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    color: #fff;
+    top: 0;
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
+}
+.pageBanner {
+    background-color: rgb(255, 85, 85);
+    height: 3em;
+}
+nav {
+    z-index: 50;
+    position: absolute;
 }
 nav ul {
-    display: block;
-    line-height: 4em;
-    padding-left: 0;
-    text-align: center;
-    padding: 0.5em 1em;
-    margin: 1em 0.5em 0 0.5em;
+    width: 4em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color:rgba(94, 94, 94, 0.226);
+    margin-right: 1em;
+    position: fixed;
 }
 .navList {
-    display: flex;
+    width: 4em;
+    border-radius: 1em;
+    background-color:transparent;
 }
 nav ul li{
-    background-color: rgb(255, 85, 85);
+    background-color: transparent;
     font-size: 1em;
-    margin-left: 3em;
     text-align: center;
     list-style: none;
     width: 3em;
     height: 3em;
     border-radius: 50%;
     border: 3px solid #fff;
-    vertical-align: 1.75em;
     color: #000;
+    margin-bottom: 1em;
+    line-height: 4em;
 }
 nav ul li a {
     color: #000;
@@ -86,7 +107,7 @@ nav ul li:hover {
     color: #fff;
     width: 1.5em;
     height: 1.5em;
-    margin: 0.5em 0;
+    margin:0 1.3em;
 }
 .menuClose {
     animation: menuClose 0.5s linear ease-out;
@@ -137,7 +158,7 @@ nav ul li:hover {
 .settings {
     background-color: rgb(255, 85, 85);
     border-radius: 3em;
-    padding: 3em;
+    padding: 1em;
     box-shadow: 0.5 -0.5em #000;
     position: fixed;
     z-index: 90;
@@ -153,13 +174,20 @@ nav ul li:hover {
 .settings ul li {
     color: #fff;
     list-style: none;
-    border-bottom: 3px solid #fff;
+    border: 3px solid #fff;
     padding: 0.5em;
-    border-radius: 0.5em 0.5em 0 0;
+    border-radius: 10em;
     line-height: 2em;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 5em;
+    height: 5em;
+}
+.settings ul li a {
+    width: 100%;
+    height: 5em;
+    position: absolute;
 }
 .settings ul li:hover {
     background: rgb(255, 134, 134);
@@ -168,8 +196,8 @@ nav ul li:hover {
 .icon {
     color: #fff;
     text-decoration: none;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2em;
+    height: 2em;
 }
 #setSection {
     width: 100%;

@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="crushRestaurant.css">
 </head>
 <body>
+    <section>
+        <div class="pageBanner"></div>
+    </section>
+
     <!-- Settings Menu -->
     <section id="setSection">
         <div class="settings">
@@ -21,17 +25,15 @@
         </div>
     </section>
     
-     <!-- Navbar -->
-     <section>
+    <!-- Navbar -->
+    <section>
         <nav>
             <ul>
-                <div class="subMenu">
-                    <div class="navList">
-                        <li><ion-icon class="listTag" name="contact"></ion-icon><a href="crushProfile.html"></a></li>
-                        <li id="today"><ion-icon class="listTag" name="today" onclick="scrollToday()" href="crushLanding.html"></ion-icon></li>
-                        <li><ion-icon class="listTag" name="bookmarks"><a href="crushRestaurant.html"></a></ion-icon></li>
-                        <li><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
-                    </div>
+                <div class="navList">
+                    <li alt="Profile"><ion-icon class="listTag" name="contact"></ion-icon><a href="crushProfile.html"></a></li>
+                    <li id="today" alt="Todays Picks"><ion-icon class="listTag" name="today" onclick="scrollToday()" href="crushLanding.html"></ion-icon></li>
+                    <li alt="Recipe Collection"><ion-icon class="listTag" name="bookmarks"><a href="crushRestaurant.html"></a></ion-icon></li>
+                    <li alt="Settings"><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
                 </div>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
             </ul>
@@ -39,10 +41,12 @@
     </section>
 
     <section>
-        <img class="bannerImg" src="crushImages/restaurant.jpg">
-        <div class="bannerText">
-            <label>&#127813;</label>
-                <p>Restaurant Quality Recipes, In the palm of your hand at an instant. </p>
+        <div class="headBanner">
+            <img class="bannerImg" src="crushImages/restaurant.jpg">
+            <article class="bannerText">
+                <label>&#127813;</label>
+                    <p>Restaurant Quality Recipes, In the palm of your hand at an instant. </p>
+            </article>
         </div>
     </section>
 

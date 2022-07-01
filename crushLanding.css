@@ -2,27 +2,15 @@
 *{
     font-family: monospace;
 }
-.headBanner {
-    display: block;
-    position: relative;
-    flex-wrap: wrap;
-    top: 5em;
-}
-.bannerImg {
-    width: 100%;
-}
 .bannerText {
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
     z-index: 1;
     color: #fff;
-    right: 0;
     top: 0;
-    padding: 1em;
-    width: 40%;
-    height: 82.5%;
     font-size: 1em;
     text-align: center;
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
 }
 label {
     font-size: 2em;
@@ -46,15 +34,15 @@ p {
 }
 .topPicks {
     background-color: transparent;
-    padding: 1em 1em;
+
     border-radius: 0.5em;
 }
 .pickGallery {
     background-color: rgb(255, 85, 85);
-    padding: 0.5em;
+    padding: 1em 1em;
     display: flex;
     margin-bottom: 0.5em;
-    border-radius: 1em;
+    border-radius: 1em;    
 }
 .pickCard {
     background-color: #fff;
@@ -62,18 +50,44 @@ p {
     overflow: hidden;
 }
 .couplet {
-    width: 100%;
+    width: 60%;
+    padding: 1em 0;
 }
 label {
     font-size: 1.5em;
 }
 .pantry {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(216, 201, 169);
+}
+.pantry label {
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    padding: 1em 0;
+    width: 100%;
+    height: 2em;
+    box-shadow: 0 0.25em rgba(0, 0, 0, 0.575);
+    text-align: center;
+}
+.pageBreaker {
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    padding: 0.5em 0;
 }
 .redTxt {
-    color: rgb(255, 85, 85);
-    padding: 0;
-    font-size: 1.5em;
+    color: #000;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 1em;
+    width: 14em;
+    text-align: center;
+    margin-top: 1em;
+}
+.dailyPicks {
+    padding: 1em;
+    background: transparent;
 }
 .pickable{
     background-color: #fff;
