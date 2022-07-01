@@ -9,62 +9,46 @@
     <link rel="stylesheet" type="text/css" href="crushLanding.css">
 </head>
 <body>
+    <section>
+        <div class="pageBanner"></div>
+    </section>
     <!-- Settings Menu -->
     <section id="setSection">
         <div class="settings">
             <ul>
-                <li><ion-icon class="icon" name="contacts" onclick="extendProfileMenu()"></ion-icon> Profile</li>
-                <li><ion-icon class="icon" name="refresh-circle"></ion-icon><a href="crushHistory.html"></a> Make it again!</li>
-                <li><ion-icon class="icon" name="pricetag"></ion-icon> Membership</li>
+                <li><ion-icon class="icon" name="contacts"></ion-icon><a href="crushProfile.html"></a> Profile</li>
+                <li><ion-icon class="icon" name="refresh-circle"></ion-icon><a href="crushHistory.html"></a> History</li>
+                <li><ion-icon class="icon" name="pricetag"></ion-icon><a onclick="scrollMembership()" Membership></a></li>
                 <li><ion-icon class="icon exit" name="backspace" onclick="extendSettingsMenu()"></ion-icon></li>
             </ul>
-        </div>
-
-        <div class="profileBox">
-                <label class="profileLabel">Profile: </label>
-                <div class="profile"></div>
-                <div class="profileCnt">
-                    <div class="activity">
-                        <span>Activity:</span>
-                    </div>
-                    <div class="history">
-                        <span>History:</span>
-                    </div>
-                </div>
-                <ion-icon class="icon exit" name="backspace" onclick="extendSettingsMenu()"></ion-icon>
         </div>
     </section>
     <!-- Navbar -->
     <section>
         <nav>
             <ul>
-                
-                <div class="subMenu">
-                    <span class="profile"><ion-icon class="listTag" name="person-circle-outline"></ion-icon></span>
-                    <div class="navList">
-                        <li><ion-icon id="today" class="listTag" name="today" onclick="scrollToday()"></ion-icon><a></a></li>
-                        <li><ion-icon class="listTag" name="add"></ion-icon></li>
-                        <li><ion-icon class="listTag" name="restaurant"><a href="crushRestaurant.html"></a></ion-icon></li>
-                        <li><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
-                    </div>
+                <div class="navList">
+                    <li alt="Profile"><ion-icon class="listTag" name="contact"></ion-icon><a href="crushProfile.html"></a></li>
+                    <li id="today" alt="Todays Picks"><ion-icon class="listTag" name="today" onclick="scrollToday()" href="crushLanding.html"></ion-icon></li>
+                    <li alt="Recipe Collection"><ion-icon class="listTag" name="bookmarks"><a href="crushRestaurant.html"></a></ion-icon></li>
+                    <li alt="Settings"><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
                 </div>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
-                <!-- <li>Profile</li> -->
             </ul>
         </nav>
     </section>
     
     <section>
         <div class="headBanner">
-            <img class="bannerImg" src="crushImages/banner1.jpg">
+            <img class="bannerImg" src="crushImages/heroImg.landing.jpg">
             <article class="bannerText">
                 <label class="headLabel">&#127813;</label>
-                <p>Welcome to your personal recipe box <label>&#128477;</label></p>
+                <p> Welcome to your personal recipe box</p>
                 <a id="login" class="loginBtn" onclick="loginWindow()">LogIn</a>
                 <a id="register" class="loginBtn" href="crushLogin.html">Register</a>
                 <div class="logDirectory">
                     <form id="login" method="post" onsubmit="validateForm()">
-                        <label class="logLabel">// Enter your keys to the castle here //</label>
+                        <label class="logLabel"><ion-icon name="person-add"></ion-icon></label>
                         <input type="text" placeholder="Username or Email">
                         <input type="password" placeholder="Password">
                     </form>
@@ -77,13 +61,20 @@
         <div class="topPicks">
             <div class="pantry">
                 <label>Your Pantry:</label>
-                <img class="couplet" src="crushImages/pantry.jpg">
-                <p class="redTxt"> Today's Choices</p><p> Hand picked for you</p>
+                <img class="couplet" src="crushImages/pantry.png">
             </div>
+        </div>
+    </section>
+
+    <section>
+            <div class="redTxt">
+                <label> Today's Choices </label>
+                <p> Hand picked for you </p>
+            </div>
+        <div class="dailyPicks">
             <div class="pickGallery">
                 <div class="pickCard">
                     <article class="pickable">
-
                         <img class="todaysImg" src="crushImages/lasagna.jpg">
                         <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
                         <!-- Daily Pick #2 -->
@@ -109,6 +100,5 @@
 <script src="extendMenu.js"></script>
 <script src="scrollTo.js"></script>
 <script src="windowControl.js"></script>
-<script src="formControl.js"></script>
 </body>
 </html>

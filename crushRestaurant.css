@@ -2,19 +2,15 @@
     font-family: monospace;
     margin: auto;
 }
-.bannerImg {
-    margin-top: 2em;
-    width: 100%;
-    height: 30em;
+body {
+    background: linear-gradient(rgb(218, 126, 218),pink);
 }
 .recipeBox {
     background-color: rgb(255, 85, 85);
     border-radius: 1em;
     padding: 0.25em 1em 0.5em 1em;
-    top: 35em;
-    left: 2.5em;
-    right: 2.5em;
     position: absolute;
+    top: 50em;
 }
 .recipeBoxLabel {
     color: #fff;
@@ -46,17 +42,6 @@
     min-height: 7em;
     margin-bottom: 0.25em;
 }
-.recipe:hover {
-    animation: 0.5s recipeSelect linear ease-in-out;
-}
-@keyframes recipeSelect {
-    0% {
-        width: 32%;
-    }
-    100% {
-        width: 70%;
-    }
-}
 .recipeLabel  {
     padding: 0.25em 0.5em;
 }
@@ -70,19 +55,6 @@
     font-size: 0.75em;
     padding: 0.5em;
     overflow: auto;
-}
-.bannerText {
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-    right: 0;
-    top: 16em;
-    padding: 1em;
-    width: 100%;
-    height: 20%;
-    font-size: 1em;
-    text-align: center;
 }
 .bannerText p {
     padding: 0.5em 1em;
