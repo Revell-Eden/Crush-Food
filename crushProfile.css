@@ -33,7 +33,7 @@
     text-decoration: none;
 }
 .profileBox {
-    display: none;
+    display: flex;
     background-color: rgb(255, 85, 85);
     border-radius: 3em;
     padding: 1em;
@@ -47,7 +47,7 @@
 }
 .profileLabel {
     color: #fff;
-    padding-left: 0.5em;
+    padding: 0.5em 0 0 0;
 }
 .profileCnt {
     background-color: #fff;
@@ -58,9 +58,7 @@
 .profileAlign {
     display: flex;
     flex-direction: column;
-}
-.headAlign {
-    margin-top: 0.5em;
+    padding: 0.5em 0;
 }
 .history {
     background-color: #fff;
@@ -70,8 +68,32 @@
 }
 .activity {
     background-color: #fff;
-    border-radius: 0.5em;
+    border-radius: 50%;
     padding: 2em;
     display: block;
     margin-bottom: 0.5em;
+    position: relative;
+}
+.activityCnt {
+    display: flex;
+    border-bottom: 3px solid #000;
+    padding-bottom: 1em;
+}
+.activityLabel {
+    display: flex;
+    margin-bottom: 1em;
+}
+.ranking {
+    font-size: 1.5em;
+    background-color: rgb(64, 117, 64);
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin:0 1em 0 0;
+}
+.rankBadge {
+    margin-bottom: 0.5em;
+}
+.rankScore {
+    text-align: center;
 }
