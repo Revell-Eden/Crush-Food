@@ -32,3 +32,25 @@ window.onload = function rankMe() {
         return false;
     }
 }
+/*
+// Profile Img logic // 
+window.onload = function createProfileImg() {
+   let profilePlac = document.querySelector('.profile');
+   let z = 0;
+   profilePlac.innerHTML = ``;
+
+   z = Math.round(Math.random() * 10%3);
+   console.log(z);
+   if (z = 0) {
+    profilePlac.innerHTML = `<img src="crushImages/userLogo1.jpg">`;
+   } else if (z = 1) {
+    profilePlac.innerHTML = `<img src="crushImages/userLogo2.jpg">`;
+   } else if (z = 2) {
+    profilePlac.innerHTML = `<img src="crushImages/userLogo2.jpg">`;
+   } else if (z = 3) {
+    profilePlac.innerHTML = `<img src="crushImages/userLogo1.jpg">`;
+   } else {
+    return false;
+   }
+}
+*/

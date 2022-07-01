@@ -16,7 +16,7 @@
             <label> Crush Food </label>
         </div>
     </section>
-    
+
     <!-- Settings Menu -->
     <section id="setSection">
         <div class="settings">
@@ -33,15 +33,13 @@
     <section>
         <nav>
             <ul>
-                <div class="subMenu">
-                    <div class="navList">
-                        <li><ion-icon class="listTag" name="contact"></ion-icon><a href="crushProfile.html"></a></li>
-                        <li id="today"><ion-icon class="listTag" name="today" onclick="scrollToday()" href="crushLanding.html"></ion-icon></li>
-                        <li><ion-icon class="listTag" name="bookmarks"><a href="crushRestaurant.html"></a></ion-icon></li>
-                        <li><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
-                    </div>
-                </div>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
+                <div class="navList">
+                    <li alt="Profile"><a href="crushProfile.html"></a><ion-icon class="listTag" name="contact"></ion-icon></li>
+                    <li id="today" alt="Todays Picks"><a href="#" onclick="scrollToday()"></a><ion-icon class="listTag" name="today" ></ion-icon></li>
+                    <li alt="Recipe Collection"><a href="crushRestaurant.html"></a><ion-icon class="listTag" name="bookmarks"></ion-icon></li>
+                    <li alt="Settings"><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
+                </div>
             </ul>
         </nav>
     </section>
@@ -63,7 +61,7 @@
     <section>
         <div class="profileBox">
             <div class="profileAlign">
-                <span class="profile"></span>
+                <span class="profile"><ion-icon name="contact"></ion-icons></span>
                 <label class="profileLabel">Profile:</label>
             </div>
             <div class="profileCnt">
@@ -92,6 +90,5 @@
     <script src="extendMenu.js"></script>
     <script src="windowControl.js"></script>
     <script src="ranking.js"></script>
-
 </body>
 </html>

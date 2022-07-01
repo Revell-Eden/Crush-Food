@@ -32,9 +32,24 @@ p {
     font-family: monospace;
     display: block;
 }
+#loginImg {
+    width: 60%;
+    border-radius: 0.5em 0 0 0.5em;
+}
+#loginForm {
+    width: 40%;
+}
+.loginInput {
+    width: 90%;
+}
+#submitBtn {
+    border-radius: 2em;
+    border-bottom: none;
+    background: linear-gradient(rgb(97, 255, 76), rgb(182, 255, 213));
+    height: 4em;
+}
 .topPicks {
     background-color: transparent;
-
     border-radius: 0.5em;
 }
 .pickGallery {
@@ -124,12 +139,12 @@ label {
     padding: 0.5em;
     display: none;
 }
-.logLabel {
+#logLabel {
     font-size: 1em;
     display: block;
-    background-color: rgb(255, 85, 85);
+    background-color: transparent;
     padding-bottom: 0.5em;
-    margin-bottom: 2em;
+    color: #000;
 }
 form {
     background-color: #fff;
