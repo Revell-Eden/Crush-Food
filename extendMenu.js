@@ -1,18 +1,16 @@
 "use strict";
-let subMenu = document.querySelector('.subMenu');
-let nav = document.querySelector('nav');
+
+let nav = document.querySelector('.navList');
 let toggle = document.querySelector('.menuToggle');
 
 function extendMenu() {
-  if (subMenu.style.display === "flex"){
-    subMenu.style.display = "none";
-    console.log("close");
-    nav.style.height = "4em";
+  if (nav.style.display === "none"){
+    nav.style.display = "flex";
+    console.log("open");
     toggle.classList.add('.menuClose');
   } else {
-    subMenu.style.display = "flex";
-    console.log("open");
-    nav.style.height = "6em";
+    nav.style.display = "none";
+    console.log("close");
     toggle.classList.add('.menuOpen');
 }   
 }
