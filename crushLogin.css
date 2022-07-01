@@ -3,16 +3,27 @@
     background-color: rgb(64, 117, 64);
 }
 form {
-    background-color: /*rgb(64, 117, 64);*/ #fff;
+    background-color: #fff;
     padding: 1em;
     border-radius: 1em;
     display: block;
     margin: auto;
-    box-shadow: 0.5em -0.5em #000;
     width: 70%;
     position: absolute;
     top: 45%;
     left: 10%;
+}
+#register {
+    display: block;
+    background-color: transparent;
+    top: 15%;
+}
+.form {
+    background-color: #fff;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    box-shadow: 0.5em -0.5em #000;
+    padding: 1em;
 }
 label {
     color: #000;
@@ -27,9 +38,9 @@ form input {
 }
 .bgImg {
     width: 100%;
-    position: absolute;
-    top: 25%;
+    position: fixed;
     z-index: -100;
+    top: 25%;
 }
 .favFood {
     padding: 0.5em;
@@ -52,6 +63,11 @@ article {
 }
 .radioFood {
     margin-left: 0.5em;
+    border-radius: 50%;
+    background-color: rgb(64, 117, 64);
+}
+.radioFood:checked {
+    background-color: rgb(64, 117, 64);
 }
 input {
     color: #000;
@@ -63,4 +79,44 @@ input {
     width: 70%;
     position: absolute;
     z-index: 2;
+    padding: 3em;
+}
+.logRedirect h3, .logRedirect p {
+    background-color: #fff;
+    margin-bottom: 0.5em;
+}
+.formCycleBtn {
+    color: #fff;
+    background-color: rgb(64, 117, 64);
+    border-radius: 1em;
+    width: 5em;
+    height: 2em;
+    margin: 1em 0 0 15em;
+}
+.formCycleBtn:hover {
+    cursor: pointer;
+}
+.tag {
+    width: 7em;
+}
+aside {
+    display: flex;
+    background-color: #fff;
+    margin-left: 0;
+}
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    color: #fff;
+    background-color: rgb(64, 117, 64);
+}
+.redirectBtn {
+    background-color: rgb(64, 117, 64);
+    width: 5em;
+    height: 3em;
+    border-radius: 1em;
+    padding: 0.5em;
+    text-align: center;
+    line-height: 3.5em;
+    display: block;
 }
