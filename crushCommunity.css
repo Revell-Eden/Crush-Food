@@ -1,0 +1,40 @@
+* {
+    font-family: monospace;
+}
+body {
+    background: rgb(162, 210, 210);
+}
+section {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.panel {
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 1em 0;
+    width: 100%;
+}
+.communityWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 1em;
+}
+label {
+    margin: 0 1em;
+    font-size: 1.4em;
+}
+.messageCnt {
+    background-color: rgb(226, 223, 223);
+    margin: 1em;
+    display: flex;
+}
+#people {
+    width: 30%;
+    background-color: rgb(255, 131, 131);
+}
+#chatroom {
+    width: 70%;
+    padding: 1em;
+}
