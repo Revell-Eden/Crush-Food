@@ -59,7 +59,7 @@ label {
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 42em;
+    min-height: 46em;
 }
 .devPost {
     height: 30em;
@@ -160,4 +160,10 @@ aside {
 .iconInner {
     width: 2em;
     height: 2em;
+}
+.recipe {
+    border: 3px solid rgb(255, 131, 131);
+    border-radius: 0.5em;
+    padding: 0.25em;
+    margin-top: 0.5em;
 }
