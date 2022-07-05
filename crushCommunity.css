@@ -14,6 +14,7 @@ section {
     border-radius: 1em;
     padding: 1em 0;
     width: 100%;
+    margin-bottom: 0.5em;
 }
 .communityWrapper {
     display: flex;
@@ -25,10 +26,15 @@ label {
     margin: 0 1em;
     font-size: 1.4em;
 }
-.messageCnt {
+.Cnt {
     background-color: rgb(226, 223, 223);
     margin: 1em;
     display: flex;
+}
+.featureCnt {
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: column;
 }
 #people {
     width: 30%;
@@ -37,4 +43,45 @@ label {
 #chatroom {
     width: 70%;
     padding: 1em;
+}
+.bubble {
+    border-radius: 0.5em;
+    background-color: #fff;
+    padding: 0.5em;
+    border: 3px solid rgb(255, 131, 131);
+    margin-bottom: 0.5em;
+}
+.featuredPost {
+    background-color: #fff;
+    border-radius: 0.5em;
+    margin: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.featuredPost label {
+    font-size: 1.25em;
+    text-align: center;
+}
+.featuredPost article {
+    margin: auto 0.5em;
+    padding: 1em;
+    position: absolute;
+    top: 3em;
+    background-color: rgba(0,0,0,0.1);
+
+}
+.featuredPost img {
+    width: 25em;
+    height: 12em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    position: relative;
+    flex-wrap: wrap;
+}
+.featuredPost p {
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    color: #000;
 }
