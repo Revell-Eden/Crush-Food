@@ -14,7 +14,6 @@ section {
     border-radius: 1em;
     padding: 1em 0;
     width: 100%;
-    margin-bottom: 0.5em;
 }
 .communityWrapper {
     display: flex;
@@ -35,6 +34,8 @@ label {
     padding: 0.5em 0;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    height: 42em;
 }
 #people {
     width: 30%;
@@ -54,17 +55,26 @@ label {
 .featuredPost {
     background-color: #fff;
     border-radius: 0.5em;
-    margin: 0 0.5em;
+    margin: 0 0.5em 0.5em 0.5em;
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
+    min-height: 42em;
+}
+.devPost {
+    height: 30em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    margin: 0 0.5em 0.5em 0.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .featuredPost label {
     font-size: 1.25em;
     text-align: center;
 }
-.featuredPost article {
+.featuredPost .devNote {
     margin: auto 0.5em;
     padding: 1em;
     position: absolute;
@@ -73,6 +83,12 @@ label {
 
 }
 .featuredPost img {
+    width: 100%;
+    height: 28em;
+    margin: 0;
+    border-radius: 0.5em 0.5em 0 0;
+}
+.devPost img {
     width: 25em;
     height: 12em;
     border-top-left-radius: 0.5em;
@@ -80,8 +96,64 @@ label {
     position: relative;
     flex-wrap: wrap;
 }
-.featuredPost p {
+.devPost p {
     padding: 0.5em 1em;
     font-size: 1.1em;
     color: #000;
+}
+.featuredPost .profile{
+    padding: 0.5em;
+    margin: auto; 
+    vertical-align: 2em;
+}
+.featuredPost .profile img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 131, 131);
+    padding: 0.25em;
+}
+aside {
+    margin-left: 10em;
+}
+.like {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 131, 131);
+    padding: 0.5em;
+}
+.userId {
+    margin: auto;
+    margin-left: 0.5em;
+}
+.userDetails {
+    margin-left: 0.5em;
+    border-bottom: 2px solid rgb(255, 131, 131);
+    display: flex;
+}
+.featuredPost article {
+    margin: 0 1em 0 1.5em;
+    padding: 0.5em;
+}
+.featurePane {
+    height: 45.5em;
+    overflow: hidden;
+}
+.commentSection {
+    height: 3em;
+    background-color: rgb(226, 223, 223);
+    padding: 0.5em;
+    margin: 0;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border: 0.5em solid #fff;
+}
+.comment {
+    background-color: rgb(255, 131, 131);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    display: block;
 }
