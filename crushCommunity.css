@@ -157,3 +157,7 @@ aside {
     color: #fff;
     display: block;
 }
+.iconInner {
+    width: 2em;
+    height: 2em;
+}
