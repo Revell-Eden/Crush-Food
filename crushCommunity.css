@@ -35,7 +35,7 @@ label {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 42em;
+    height: 59em;
 }
 #people {
     width: 30%;
@@ -115,6 +115,7 @@ label {
 }
 aside {
     margin-left: 10em;
+    display: flex;
 }
 .like {
     width: 1.5em;
@@ -122,6 +123,10 @@ aside {
     border-radius: 50%;
     border: 3px solid rgb(255, 131, 131);
     padding: 0.5em;
+}
+.like:hover {
+    background-color: rgb(255, 131, 131);
+    color: #fff;
 }
 .userId {
     margin: auto;
@@ -137,26 +142,43 @@ aside {
     padding: 0.5em;
 }
 .featurePane {
-    height: 45.5em;
+    height: 63.5em;
     overflow: hidden;
 }
 .commentSection {
-    height: 3em;
+    height: 5em;
     background-color: rgb(226, 223, 223);
     padding: 0.5em;
-    margin: 0;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     border: 0.5em solid #fff;
+    display: flex;
+    overflow-x: auto;
+    min-width: 30em;
+    margin: 0;
 }
-.comment {
+.featureAllign {
+    display: block;
+    text-align: center;
+}
+.commented {
     background-color: rgb(255, 131, 131);
     border-radius: 0.5em;
-    padding: 0.5em;
+    padding: 1em;
+    border: none;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    min-width: 28em;
+}
+.commented .span {
+    width: 20%;
+}
+input {
+    background-color: rgb(255, 131, 131);
     border: none;
     border-bottom: 2px solid #fff;
     color: #fff;
-    display: block;
 }
 .iconInner {
     width: 2em;

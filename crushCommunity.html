@@ -73,9 +73,11 @@
                         <ion-icon class="like" name="thumbs-down"></ion-icon>
                     </aside>
                 </article>
-                <article>
-                    <label>Example Post</label>
-                    <p>post cnt</p>
+                <aside>
+                    <article class="featureAllign">
+                        <label>Example Post</label>
+                        <p>post cnt</p>
+                    </article>
                     <a onclick="showRecipe()"><ion-icon class="iconInner recipe" name="bookmarks"></ion-icon></a>
                     <!-- hidden recipe div -->
                     <div class="recipePreview">
@@ -88,11 +90,11 @@
                             <li></li>
                         </ul>
                     </div>
-                </article>
-                <div class="commentSection">
-                    <input type="text" placeholder="new comment" id="newComment" class="comment">
-                    <button onclick="postComment()"><ion-icon name="chatbubbles"></ion-icon></button>
-                </div>
+                </aside>
+                <ul class="commentSection">
+                </ul>
+                <input class="commented" id="newComment" type="text" placeholder="new comment" class="comment">
+                <button onclick="postComment()"><ion-icon name="chatbubbles"></ion-icon></button>
             </div>
 
         </div> <!-- FeatureCnt div end-->
@@ -100,8 +102,8 @@
     </section>
     <!-- Dependencies -->
     <script src="extendMenu.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="communityControl.js"></script>
 </body>
 </html>
