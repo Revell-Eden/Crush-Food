@@ -19,16 +19,6 @@ function validateForm() {
     }
 }
 
-// Store
-function storeDetails() {
-localStorage.setItem("email", emailStored);
-localStorage.setItem("username", usernameStored);
-localStorage.setItem("password", passwordStored);
-}
-// Retrieve
-let storedUser = localStorage.getItem("email", "username", "password");
-console.log(storedUser);
-
 /// Add Recipe Section ///
 function addDirection() {
     document.querySelector('#solution').insertAdjacentHTML(

@@ -2,6 +2,7 @@
 
 let nav = document.querySelector('.navList');
 let toggle = document.querySelector('.menuToggle');
+// PRIMARY NAVBAR //
 
 function extendMenu() {
   if (nav.style.display === "none"){
@@ -14,6 +15,7 @@ function extendMenu() {
     toggle.classList.add('.menuOpen');
 }   
 }
+
 let settings = document.querySelector('.settings');
 let setSect = document.querySelector('#setSection');
 let exit = document.querySelector('.exit');
@@ -32,7 +34,7 @@ function extendSettingsMenu() {
     setSect.style.background = "rgb(0,0,0,0.8)";
 }   
 }
-
+/*
 window.onload = function extendProfileMenu() {
   let profileBox = document.querySelector('.profileBox');
   let registrationAwait = document.querySelector('.registrationAwait');
@@ -43,3 +45,4 @@ window.onload = function extendProfileMenu() {
     alert("no registration found");
   }
 }
+*/
