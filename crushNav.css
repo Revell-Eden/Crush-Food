@@ -112,6 +112,8 @@ nav ul li:hover {
     height: 4em;
     opacity: 100%;
     color: #000;
+    margin-right: 0.5em;
+    margin-left: -0.5em;
     margin-top: -1em;
     background-color: #fff;
     border-radius: 50%;

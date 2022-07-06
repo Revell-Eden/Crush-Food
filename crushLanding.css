@@ -103,6 +103,7 @@ label {
     white-space: nowrap;
     overflow: auto;
     display: inline-flexbox;
+>>>>>>> main
 }
 .todaysCnt {
     background-color: #fff;
@@ -130,14 +131,6 @@ label {
     background-color: rgb(255, 85, 85);
     border-radius: 0.5em;
     padding: 0.5em;
-    display: none;
-}
-#logLabel {
-    font-size: 1em;
-    display: block;
-    background-color: transparent;
-    padding-bottom: 0.5em;
-    color: #000;
 }
 form {
     background-color: #fff;
