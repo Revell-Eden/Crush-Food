@@ -16,10 +16,6 @@ label {
     font-size: 2em;
 
 }
-p {
-    text-align: center;
-    padding: 1em 0.5em;
-}
 .loginBtn {
     border-radius: 1em;
     background-color:rgb(255, 85, 85);
@@ -67,9 +63,6 @@ p {
 .couplet {
     width: 60%;
     padding: 1em 0;
-}
-label {
-    font-size: 1.5em;
 }
 .pantry {
     display: flex;
@@ -163,6 +156,7 @@ input {
 #dojoImg {
     width: 100%;
     border-radius: 1em 1em 0 0;
+    height: 14em;
 }
 #dojoRedirectBanner {
     background-color: rgba(94, 94, 94, 0.5);
@@ -174,7 +168,7 @@ input {
     width: 2em;
     height: 2em;
     border-radius: 2em;
-    background: linear-gradient(rgb(121, 255, 103), rgb(140, 255, 188));
+    background: rgb(182, 255, 213);
     padding: 0.75em;
     display: flex;
     border: none;

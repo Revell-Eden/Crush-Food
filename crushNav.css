@@ -1,12 +1,4 @@
 /* Navbar Css */
-
-* {
-    font-size: 1em;
-    margin: auto;
-}
-body {
-    background: linear-gradient(rgb(97, 255, 76), rgb(182, 255, 213));
-}
 #logo {
     width: 2.5em;
     padding: 0.5em 2em;
@@ -20,26 +12,6 @@ body {
 .pageBanner label {
     margin-left: 0;
     color: #fff;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 1em;
-}
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-  
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(255, 85, 85);
-    border-radius: 0.5em;
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 134, 134);
 }
 .headBanner {
     display: block;
@@ -144,28 +116,6 @@ nav ul li:hover {
     background-color: #fff;
     border-radius: 50%;
 }
-@keyframes menuClose {
-    0% {
-        transform: translateX(0.5em);
-    }
-    25% {
-        transform: translateX(0em);
-    }
-    50% {
-        transform: translateX(-0.5em);
-    }
-    100% {
-        transform: translateX(0em);
-    }
-}
-@keyframes menuOpen {
-    0% {
-        transform: rotateZ(0deg);
-    }
-    100% {
-        transform: rotateZ(90deg);
-    }
-}
 /* Settings Menu Element */
 .settings {
     background-color: rgb(255, 85, 85);
@@ -193,8 +143,6 @@ nav ul li:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 5em;
-    height: 5em;
 }
 .settings ul li a {
     width: 100%;
@@ -219,7 +167,3 @@ nav ul li:hover {
     display: none;
     position: fixed;
 }
-.exit {
-    transform: rotateZ(90deg);
-}
-/* Today Elements Section */

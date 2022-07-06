@@ -1,16 +1,9 @@
-* {
-    font-family: monospace;
-    margin: auto;
-}
-body {
-    background: linear-gradient(rgb(218, 126, 218),pink);
-}
 .recipeBox {
     background-color: rgb(255, 85, 85);
     border-radius: 1em;
     padding: 0.25em 1em 0.5em 1em;
     position: absolute;
-    top: 50em;
+    top: 53em;
 }
 .recipeBoxLabel {
     color: #fff;
