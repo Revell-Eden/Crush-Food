@@ -7,41 +7,55 @@
     <title>Crush-Home</title>
     <link rel="stylesheet" type="text/css" href="crushNav.css">
     <link rel="stylesheet" type="text/css" href="crushLanding.css">
+    <link rel="stylesheet" type="text/css" href="crushAcl.css">
 </head>
 <body>
+    <!-- Page Banner -->
+    <section>
+        <div class="pageBanner">
+            <img id="logo" src="crushImages/logowhite.png">
+            <label> Crush Food </label>
+        </div>
+    </section>
+    <!-- Settings Menu -->
+    <section id="setSection">
+        <div class="settings">
+            <ul>
+                <li><ion-icon class="icon" name="refresh-circle"></ion-icon><a href="crushHistory.html"></a> History</li>
+                <li><ion-icon class="icon" name="pricetag"></ion-icon><a onclick="scrollMembership()" Membership></a></li>
+                <li><ion-icon class="icon exit" name="backspace" onclick="extendSettingsMenu()"></ion-icon></li>
+            </ul>
+        </div>
+    </section>
     <!-- Navbar -->
     <section>
         <nav>
             <ul>
-                
-                <div class="subMenu">
-                    <span class="profile"><ion-icon class="listTag" name="person-circle-outline"></ion-icon></span>
-                    <div class="navList">
-                        <li><ion-icon id="today" class="listTag" name="today" onclick="scrollToday()"></ion-icon><a></a></li>
-                        <li><ion-icon class="listTag" name="add"></ion-icon></li>
-                        <li><ion-icon class="listTag" name="restaurant"><a href="crushRestaurant.html"></a></ion-icon></li>
-                        <li><ion-icon class="listTag" name="options"></ion-icon></li>
-                    </div>
-                </div>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
-                <!-- <li>Profile</li> -->
+                <div class="navList">
+                    <li id="crushCommunity" alt="Crush Community"><a href="crushCommunity.html"></a><ion-icon class="listTag" name="today" ></ion-icon></li>
+                    <li alt="Recipe Collection"><a href="crushRestaurant.html"></a><ion-icon class="listTag" name="bookmarks"></ion-icon></li>
+                    <li alt="Settings"><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
+                </div>
             </ul>
         </nav>
     </section>
     
     <section>
         <div class="headBanner">
-            <img class="bannerImg" src="crushImages/banner1.jpg">
+            <img class="bannerImg" src="crushImages/heroImg.landing.jpg">
             <article class="bannerText">
-                <label>&#127813;</label>
-                <p>Welcome to your personal recipe box!</p>
-                <a class="loginBtn" onclick="loginWindow()">LogIn</a>
-                <a class="loginBtn" href="crushLogin.html">Register</a>
+                <label class="headLabel">&#127813;</label>
+                <p> Welcome to your personal recipe box</p>
+                <a id="login" class="loginBtn" onclick="loginWindow()">LogIn</a>
+                <a id="register" class="loginBtn" href="crushLogin.html">Register</a>
                 <div class="logDirectory">
-                    <form>
-                        <label class="logLabel">// Enter your keys to the castle here //</label>
-                        <input type="text" placeholder="Username or Email">
-                        <input type="password" placeholder="Password">
+                    <img id="loginImg" src="crushImages/loginBg.jpg">
+                    <form id="loginForm" method="post" onsubmit="validateForm()">
+                        <label id="logLabel"><ion-icon class="icon" name="person-add"></ion-icon></label>
+                        <input class="loginInput" type="text" placeholder="Username or Email">
+                        <input class="loginInput" type="password" placeholder="Password">
+                        <input id="submitBtn" type="submit">
                     </form>
                 </div>
             </article>
@@ -51,25 +65,62 @@
     <section>
         <div class="topPicks">
             <div class="pantry">
-                <label>Your Pantry:</label>
-                <img class="couplet" src="crushImages/pantry.jpg">
-                <p class="redTxt"> Today's Choices</p><p> Hand picked for you</p>
+                <label class="pageBreaker">Your Pantry:</label>
+                <img class="couplet" src="crushImages/pantry.png">
             </div>
-            <div class="pickGallery">
-                <div class="pickCard">
-                    <article>
-                        <label class="todaysTitle">id</label>
-                        <img class="todaysImg" src="crushImages/lasagna.jpg">
-                        <p class="todaysCnt">Cnt</p>
-                    </article>
-                    
-                </div>
-            
-            </div>
-            <div id="scrollBar"></div>
         </div>
     </section>
-<!-- <li><a>Searchbar</a></li> -->
+
+    <section>
+            <div class="redTxt">
+                <label> Today's Choices </label>
+                <p> Hand picked for you </p>
+            </div>
+        <div class="dailyPicks">
+            <div class="pickGallery">
+                <div class="pickCard">
+                    <article class="pickable">
+                        <img class="todaysImg" src="crushImages/lasagna.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #2 -->
+                        <img class="todaysImg" src="crushImages/pumpkinRisotto.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #3 -->
+                        <img class="todaysImg" src="crushImages/salmonPot.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #4 -->
+                        <img class="todaysImg" src="crushImages/salad.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                        <!-- Daily Pick #5 -->
+                        <img class="todaysImg" src="crushImages/falafelBoard.jpg">
+                        <p class="todaysCnt"><label class="todaysTitle">id:</label>Description of recipe here!</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Dojo Redirect -->
+    <section>
+        <div class="pageBreaker">
+            <img id="dojoImg" src="crushImages/dojoBanner.jpg">
+            <aside id="dojoRedirectBanner">
+                <label> Culinary Dojo </label>
+                <p> Sharpen your skills with daily videos </p>
+                <a id="dojoBtn" href="crushDojo.html"><ion-icon class="icon" name="log-in"></ion-icon></a>
+            </aside>
+        </div>
+    </section>
+<!-- Top Community Dish-->
+    <section>
+        <div class="pageBreaker">
+            <div id="communityDish">
+                <!-- Parse in Community top liked recipe for the week -->
+
+            </div>
+        </div>
+    </section>
+<!-- DEPENDENCIES -->
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 <script src="extendMenu.js"></script>

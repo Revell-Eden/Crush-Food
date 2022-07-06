@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush/Login-Form</title>
+    <link rel="stylesheet" type="text/css" href="crushLogin.css">
+    <link rel="stylesheet" type="text/css" href="crushNav.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <img class="bgImg" src="crushImages/loginBg.jpg">
+            </div>
+            <form id="register" action="register.php" method="post" onsubmit="validateForm()">
+            <!-- Forms: -->
+            <!-- Email Form -->
+            <div class="form" id="emailForm">
+                <label> #1 &#128231; Email: </label>
+                <input id="email" class="formData" type="email" placeholder="SomeoneHealthy@gmail.com" required name="email">
+            </div>
+            <!-- Diet  -->
+            <div class="form" id="dietForm">
+                <label> #2 &#129367; Dietry Restictions: </label>
+                <article>
+                    <div class="favFood">
+                        <label class="radioTag">&#127838; Gluten-Free </label>
+                        <input class="radioFood formData" type="checkbox" name="glutenFree">
+                    </div>
+                    <div class="favFood">
+                        <label class="radioTag">&#129369; Vegan </label>
+                        <input class="radioFood formData" type="checkbox" name="vegan">
+                    </div>
+                    <div class="favFood">
+                        <label class="radioTag">&#129372; Peanut </label>
+                        <input class="radioFood formData" type="checkbox" name="peanut">
+                    </div>
+                    <div class="favFood">
+                        <label class="radioTag">&#129382; Vegetarian </label>
+                        <input class="radioFood formData" type="checkbox" name="vegetarian">
+                    </div>
+                    <div class="favFood">
+                        <label class="radioTag">&#129371; Lactose-Intolerent</label>
+                        <input class="radioFood formData" type="checkbox" name="lactose">
+                    </div>
+                    <div class="favFood">
+                        <label class="radioTag">&#127831; Kosher</label>
+                        <input class="radioFood formData" type="checkbox" name="kosher">
+                    </div>
+                    <div class="favFood">
+                        <label class="radioTag">&#129385; Keto</label>
+                        <input class="radioFood formData" type="checkbox" name="keto">
+                    </div>
+                </article>
+            </div>
+            <!-- Favourite Foods -->
+            <!-- Username + Password -->
+            <div class="form" id="usernamePasswordForm">
+                <article>
+                    <aside>
+                        <label class="tag">  &#128100; Username: </label>
+                        <input id="username" class="formData" type="text" placeholder="Crush1648" required name="username">
+                    </aside>
+                    <aside>
+                        <label class="tag"> &#127915; Password:    </label>
+                        <input id="password" class="formData" type="password" placeholder="Not-password" required name="password">
+                    </aside>
+                    <input type="submit" class="formCycleBtn">
+                </article>
+            </div>
+            <!-- Redirect to Home -->
+            <div id="logRedirect" class="logRedirect form">
+                <h3>Welcome to the Kitchen <label>&#129360;</label></h3>
+                <p>Click the Button below to open the Pantry</p>
+                <a class="redirectBtn" href="crushLanding.html"><ion-icon class="icon" name="home"></ion-icon></a>
+            </div>
+            </form>
+            <span class="result"></span>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="formControl.js"></script>
+</body>
+</html>
