@@ -59,7 +59,7 @@ label {
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 46em;
+    min-height: 48em;
 }
 .devPost {
     height: 30em;
@@ -166,4 +166,13 @@ aside {
     border-radius: 0.5em;
     padding: 0.25em;
     margin-top: 0.5em;
+}
+.recipePreview {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.recipe:hover {
+    background-color: rgb(255, 131, 131);
+    color: #fff;
 }
