@@ -2,12 +2,17 @@
 #logo {
     width: 2.5em;
     padding: 0.5em 2em;
-    margin: 0;
+    margin-left: -1em;
+    margin-right: -1em;
 }
 .pageBanner {
     background-color: rgb(255, 85, 85);
     height: 3.5em;
     display: flex;
+}
+.logoAnchor {
+    margin-left: 0;
+    margin-right: 0.5em;
 }
 .pageBanner label {
     margin-left: 0;
