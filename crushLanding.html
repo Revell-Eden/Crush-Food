@@ -13,7 +13,9 @@
     <!-- Page Banner -->
     <section>
         <div class="pageBanner">
-            <img id="logo" src="crushImages/logowhite.png">
+            <a class="logoAnchor" href="crushLanding.html">
+                <img id="logo" src="crushImages/logowhite.png">
+            </a>
             <label> Crush Food </label>
         </div>
     </section>
@@ -33,8 +35,10 @@
             <ul>
                 <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
                 <div class="navList">
-                    <li id="crushCommunity" alt="Crush Community"><a href="crushCommunity.html"></a><ion-icon class="listTag" name="today" ></ion-icon></li>
+                    <li alt="Profile"><a href="crushProfile.html"></a><ion-icon class="listTag" name="person"></ion-icon></li>
+                    <li id="crushCommunity" alt="Crush Community"><a href="crushDaily.html"></a><ion-icon class="listTag" name="today" ></ion-icon></li>
                     <li alt="Recipe Collection"><a href="crushRestaurant.html"></a><ion-icon class="listTag" name="bookmarks"></ion-icon></li>
+                    <li alt="Dojo"><a href="crushDojo.html"></a><ion-icon class="listTag" name="school"></ion-icon></li>
                     <li alt="Settings"><ion-icon class="listTag" name="options" onclick="extendSettingsMenu()"></ion-icon></li>
                 </div>
             </ul>
