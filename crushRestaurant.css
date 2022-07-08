@@ -1,65 +1,103 @@
 .recipeBox {
     background-color: rgb(255, 85, 85);
-    border-radius: 1em;
+    border-radius: 0 0 1em 1em;
     padding: 0.25em 1em 0.5em 1em;
-    position: absolute;
-    top: 53em;
+    margin: 0 4em;
+    height: 15em;
 }
 .recipeBoxLabel {
-    color: #fff;
+    color: #000;
     text-align: center;
     flex-direction: column;
     display: flex;
     padding: 0.5em;
+    background-color: antiquewhite;
+    border-radius: 0.25em;
 }
 .icon {
     width: 1.5em;
     height: 1.5em;
+    color: #000;
 }
 .recipeGallery {
-    background-color: #000;
+    background-color: rgb(162, 210, 210);
     padding: 1em 0.5em;
     display: flex;
     flex-wrap: wrap;
-    height: 20em;
+    max-height: 20em;
     overflow: hidden;
     overflow: auto;
 }
 .recipe {
     background-color: rgb(168, 139, 105);
-    border-radius: 0.25em;
-    width: 32%;
-    box-shadow: -0.1em 0.1em #000;
-    display: flex;
+    border-radius: 0.5em;
+    display: none;
     flex-direction: column;
     min-height: 7em;
-    margin-bottom: 0.25em;
+    margin: 0 4.5em 0.5em 4.5em;
+    z-index: -1;
+    position: sticky;
+}
+.hovertracker {
+    position: relative;
+}
+#recipeBoxLid {
+    height: 3em; border-radius: 1em 1em 0 0;
+    background-color: rgb(255, 85, 85);
+    margin: 10em 4em 0.5em 4em;
+    position: relative;
+}
+#boxOpening {
+    height: 0;
+    position: relative;
+    margin: auto;
+}
+@keyframes openRecipe {
+    from {
+       transform: translateY(10em);
+    } to {
+       transform: translateY(0);
+    }
+}
+@keyframes closeRecipe {
+    from {
+       transform: translateY(0em);
+    } to {
+       transform: translateY(0em);
+    }
 }
 .recipeLabel  {
     padding: 0.25em 0.5em;
 }
-.recipeImg {
+.bgRecipeImg {
     width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
 }
 .recipeSection {
     margin: auto;
+    position: relative;
+    border-radius: 0.5em 0.5em 0 0;
+    margin: 4em 0 4em 0;
 }
 .recipeCnt {
     font-size: 0.75em;
-    padding: 0.5em;
-    overflow: auto;
+    padding: 0.5em 0.5em 0.5em 0;
+    display: flex;
 }
 .bannerText p {
     padding: 0.5em 1em;
 }
 #recipeImg {
-    width: 100%;
+    width: 50%;
+    position: relative;
+    border-radius: 2em;
 }
 .add {
     background-color: rgb(168, 139, 105);
     padding: 1em;
     display: block;
-    border-radius: 1em;
+    border-radius: 0 0 1em 1em;
+    border-radius: 0 0 1em 1em;
 }
 #newRecipe {
     display: flex;
@@ -67,6 +105,7 @@
     border: 3px solid #000;
     border-radius: 0.5em;
     padding: 0.5em 1em;
+    background-color: rgb(168, 139, 105);
 }
 #newRecipe label {
     color: #fff;
