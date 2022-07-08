@@ -34,9 +34,12 @@ label {
 }
 #loginForm {
     width: 40%;
+    margin: 0;
+    border-radius: 0 0.5em 0.5em 0;
 }
 .loginInput {
     width: 90%;
+    background-color: #fff;
 }
 #submitBtn {
     border-radius: 2em;
@@ -168,7 +171,7 @@ input {
     width: 2em;
     height: 2em;
     border-radius: 2em;
-    background: rgb(182, 255, 213);
+    background: rgb(162, 210, 210);
     padding: 0.75em;
     display: flex;
     border: none;

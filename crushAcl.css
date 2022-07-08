@@ -36,3 +36,47 @@ label {
 .pWhite {
     color: #fff;
 }
+.bubbleCnt {
+    background-color: rgb(255, 134, 134);
+    border-radius: 6.5em;
+    width: 12em; 
+    height: 12em;
+    color: #fff;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    border: 0.5em solid #fff;
+}
+.bubbleCnt label {
+    font-size: 1em;
+    border:6px solid rgb(162, 210, 210);
+    border-radius: 5.5em;
+    width: 8em;
+    height: 10em;
+    padding: 1em;
+}
+.redirect {
+    background-color:rgb(162, 210, 210);
+    border-radius: 4.25em;
+    width: 2em;
+    height: 2;
+    padding: 0.25em;
+    position: absolute;
+    top: 11.5em;
+    left: 5.5em;
+}
+.redirectIcon {
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 1em;
+    color: #fff;
+}
+.spand {
+    background-color: #fff;
+    margin: 0 1em;
+    height: 14em;
+    border-radius: 7em;
+    margin-top: 0.5em;
+    position: relative;
+}
