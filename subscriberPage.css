@@ -1,0 +1,58 @@
+body {
+    background: rgb(41, 41, 41);
+}
+section {
+    padding: 2em 4em;
+}
+aside {
+    display: grid;
+    border-radius: 2em;
+}
+table {
+    background: linear-gradient(rgb(57, 57, 199), rgb(110, 8, 226));
+    border-radius: 2em;
+    box-shadow: -0.25em 0.25em #000;
+}
+tbody {
+    
+}
+td {
+    padding: 1em;
+    background-color: transparent;
+    color: #fff;
+}
+td p {
+    text-align: left;
+}
+tr {
+    border-bottom: 1px solid #fff;
+}
+.tableHeader {
+    display: flex;
+    flex-direction: column;
+}
+article {
+    margin-top: 0.5em;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: -0.25em 0.25em #000;
+    display: flex;
+}
+.subOption {
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.subOption img {
+    width: 8em;
+    height: 8em;
+    padding: 0.5em;
+    border-radius: 6em;
+}
+.subOption:hover {
+    transform: translateY(-1em);
+}
+.selectBtn {
+    display: none;
+}
