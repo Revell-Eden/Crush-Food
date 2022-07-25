@@ -13,7 +13,9 @@
     <!-- Page Banner -->
     <section>
         <div class="pageBanner">
-            <img id="logo" src="crushImages/logowhite.png">
+            <a class="logoAnchor" href="crushLanding.html">
+                <img id="logo" src="crushImages/logowhite.png">
+            </a>
             <label> Crush Food </label>
         </div>
     </section>
@@ -54,6 +56,20 @@
                     <p>Restaurant Quality Recipes, In the palm of your hand at an instant. </p>
             </article>
         </div>
+    </section>
+
+    <!-- Searchbar Section for browsing catalogue -->
+    <section>
+            <input class="searchBar" type="text" placeholder="Your journey starts here!">
+            <a class="searchBtn" onclick="searchMthd()">Search</a> 
+    </section> 
+
+    <!-- Map Section -->
+    <section>
+        <img id="culinaryWorld" src="crushImages/falafelBoard.jpg" onclick="displayOrigin()" onmouseenter="cursorTracker()">
+        <!-- Hidden Information Pane -->
+        <article id="worldCursor"></article>
+        <div class="pin"></div>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>

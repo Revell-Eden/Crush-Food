@@ -20,12 +20,8 @@
     color: #000;
 }
 .recipeGallery {
-    background-color: rgb(162, 210, 210);
-    padding: 1em 0.5em;
     display: flex;
-    flex-wrap: wrap;
     max-height: 20em;
-    overflow: hidden;
     overflow: auto;
 }
 .recipe {
@@ -135,22 +131,27 @@ input {
 }
 .inpNum {
     width: 2em;
-    margin: auto;
+    margin: 0 auto;
+    height: 2em;
+    padding-bottom: 0;
 }
 .spanLabel {
     width: 100%;
     text-align: center;
+    font-size: 1em;
 }
 .segLabel {
-    vertical-align: 2em;
     width: 5em;
+    font-size: 1em;
+    height: 1em
 }
 .recipeAlign {
-    line-height: 2em;
+    line-height: 1em;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     border-bottom: 2px solid #000;
+    padding-bottom: 0.5em;
 }
 .addBtn {
     width: 0.5em;
@@ -171,9 +172,6 @@ input {
 }
 .directive {
     margin-right: 0.5em;
-}
-.active {
-    opacity: 50%;
 }
 .cntSbs {
     display: flex;
@@ -199,4 +197,33 @@ aside {
     display: flex;
     border: 2px solid #000;
     margin-top: 0.5em;
+}
+.searchBar {
+    background-color: rgb(230, 230, 230);
+    padding: 0.5em 0 0.5em 0.5em;
+    border-radius: 1em 0 0 1em;
+    color: #000;
+    width: 60%;
+}
+.searchBtn {
+    color: #fff;
+    background-color: rgb(180,180,180);
+    border-radius: 0 1em 1em 0;
+    margin-left: -1em;
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+/* World food map elements */ 
+#culinaryWorld {
+    width: 90%; 
+    padding: 1em;
+    border-radius: 1em;
+}
+#culinaryWorld:hover {
+    cursor: crosshair;
+}
+.pin{
+    background-color: red;
+    border-radius: 0.5em; 
 }
