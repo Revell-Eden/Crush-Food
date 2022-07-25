@@ -1,16 +1,17 @@
 "use strict";
 
-let nav = document.querySelector('.navList');
+let nav = document.querySelector('nav');
 let toggle = document.querySelector('.menuToggle');
 // PRIMARY NAVBAR //
 
 function extendMenu() {
-  if (nav.style.display === "none"){
-    nav.style.display = "flex";
+  if (nav.style.display === "flex"){
+    nav.style.display = "none";
     console.log("open");
     toggle.classList.add('.menuClose');
   } else {
-    nav.style.display = "none";
+    nav.style.display = "flex";
+    navHidden.style.height = 0;
     console.log("close");
     toggle.classList.add('.menuOpen');
 }   
@@ -34,15 +35,5 @@ function extendSettingsMenu() {
     setSect.style.background = "rgb(0,0,0,0.8)";
 }   
 }
-/*
-window.onload = function extendProfileMenu() {
-  let profileBox = document.querySelector('.profileBox');
-  let registrationAwait = document.querySelector('.registrationAwait');
-  if (registrationAwait.style.display = "flex") {
-    profileBox.style.display = "flex";
-    registrationAwait.style.display = "none";
-  } else {
-    alert("no registration found");
-  }
-}
-*/
+
+// Subscribe Logic //
