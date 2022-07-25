@@ -41,22 +41,18 @@
 }
 
 nav {
-    z-index: 50;
-    position: absolute;
+    display: none;
 }
 nav ul {
     padding: 1em;
-    border-radius: 1em;
-    background-color:rgba(94, 94, 94, 0.226);
-    margin-right: 1em;
-    position: fixed;
-    display: flex;
-    line-height: 4em;
+    border-radius: 0 0 1em 1em;
+    background-color:rgb(0,0,0,0.7);
+    width: 100%;
 }
 .navList {
-    border-radius: 1em;
     background-color: transparent;
     display: flex;
+    margin: 0 4em;
 }
 nav ul li{
     background-color: transparent;
@@ -78,10 +74,13 @@ nav ul li a {
     position: absolute;
     z-index: 100;
 }
-nav ul li:hover {
+nav ul li .listTag:hover {
     cursor: pointer;
     background-color: #fff;
     color: #000;
+}
+.ficon {
+    margin-left: 1em;
 }
 .listTag {
     width: 1.5em;
@@ -95,14 +94,10 @@ nav ul li:hover {
     color: #fff;
     width: 2em;
     height: 2em;
-    margin: 1em 1.3em;
-    vertical-align: 2em;
-}
-.menuClose {
-    animation: menuClose 0.5s linear ease-out;
-} 
-.menuOpen {
-    animation: menuOpen 0.5s linear ease-out;
+    margin:0 1.3em;
+    padding: 0 1em 0.5em 1em;
+    background-color: rgb(0,0,0,0.7);
+    border-radius: 0 0 2em 2em;
 }
 .subMenu {
     height: 2em;

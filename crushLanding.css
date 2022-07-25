@@ -44,7 +44,7 @@ label {
 #submitBtn {
     border-radius: 2em;
     border-bottom: none;
-    background: linear-gradient(rgb(97, 255, 76), rgb(182, 255, 213));
+    background: rgb(162, 210, 210);
     height: 4em;
 }
 .topPicks {
@@ -82,6 +82,45 @@ label {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+.membership {
+    background: linear-gradient(rgb(152, 255, 152), rgb(58, 133, 98));
+    border-radius: 1.5em;
+    padding: 1em;
+    z-index: 2;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+.pleft{
+    text-align: left;
+}
+.subscribe {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    margin-top: 0.5em;
+}
+.freeTrial {
+    background: linear-gradient(rgb(57, 57, 199), rgb(110, 8, 226));
+}
+.bubble {
+    position: absolute;
+    left: 5.5em;
+    padding: 2em;
+    z-index: 1;
+}
+.bubbleL {
+    position: absolute;
+    right: 5.5em;
+    padding: 1em;
+    z-index: 1;
+}
+.dailyBanner {
+    background-color: rgba(94, 94, 94, 0.5);
+    margin: 0;
 }
 .redTxt {
     color: #000;
@@ -161,7 +200,7 @@ input {
     border-radius: 1em 1em 0 0;
     height: 14em;
 }
-#dojoRedirectBanner {
+#banner {
     background-color: rgba(94, 94, 94, 0.5);
     border-radius: 0 0 0.5em 0.5em;
     width: 100%;

@@ -34,9 +34,9 @@
     <section>
         <nav>
             <ul>
-                <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
+                
                 <div class="navList">
-                    <li alt="Profile"><a href="crushProfile.html"></a><ion-icon class="listTag" name="person"></ion-icon></li>
+                    <li class="ficon" alt="Profile"><a href="crushProfile.html"></a><ion-icon class="listTag" name="person"></ion-icon></li>
                     <li id="crushCommunity" alt="Crush Community"><a href="crushCommunity.html"></a><ion-icon class="listTag" name="today" ></ion-icon></li>
                     <li alt="Recipe Collection"><a href="crushRestaurant.html"></a><ion-icon class="listTag" name="bookmarks"></ion-icon></li>
                     <li alt="Dojo"><a href="crushDojo.html"></a><ion-icon class="listTag" name="school"></ion-icon></li>
@@ -44,6 +44,7 @@
                 </div>
             </ul>
         </nav>
+        <ion-icon class="menuToggle" onclick="extendMenu()" name="menu"></ion-icon>
     </section>
     
     <section>
@@ -109,8 +110,8 @@
     <section>
         <div class="pageBreaker">
             <img id="dojoImg" src="crushImages/dojoBanner.jpg">
-            <aside id="dojoRedirectBanner">
-                <label> Culinary Dojo </label>
+            <aside id="banner">
+                <label> Add your dish to the pot </label>
                 <p> Sharpen your skills with daily videos </p>
                 <a id="dojoBtn" href="crushDojo.html"><ion-icon class="icon" name="log-in"></ion-icon></a>
             </aside>
@@ -122,13 +123,29 @@
         <div class="hovertracker" onmouseenter="scrollRecipeBox()" onmouseleave="closeBox()">
         <div id="recipeBoxLid"></div>
         <div id="boxOpening"></div>
-        <div class="recipe">
-                    <label class="recipeLabel">Label:</label>
-                    <article class="recipeCnt">
-                        <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
-                        <p>Example content of recipe.</p>
-                    </article>
+        <div clas="recipeGallery">
+            <div class="recipe">
+                <label class="recipeLabel">Label:</label>
+                <article class="recipeCnt">
+                    <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
+                    <p>Example content of recipe.</p>
+                </article>
             </div>
+            <div class="recipe">
+                <label class="recipeLabel">Label:</label>
+                <article class="recipeCnt">
+                    <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
+                    <p>Example content of recipe.</p>
+                </article>
+            </div>
+        </div>
+        <div class="recipe">
+            <label class="recipeLabel">Test 1</label>
+            <article class="recipeCnt">
+                <img id="recipeImg" src="crushImages/pumpkinRisotto.jpg">
+                <p>Example content of recipe.</p>
+            </article>
+        </div>
             <div class="recipeBox">
             <label class="recipeBoxLabel"><ion-icon class="icon" name="paper"></ion-icon>
                 <h3>Recipe Box:</h3>
@@ -141,7 +158,29 @@
 
     <!-- ADD RECIPE SECTION -->
     <section>
-        <label class="pageBreaker"></label>
+        <div class="pageBreaker">
+            <aside class="membership">
+                <label> Become a cooking Legend </label>
+                <p class="pleft"> Expand your pantry: <br/>
+                    <br/>
+                    * Unlimited RecipeBox capacity <br/>
+                    * Gain the Su-Chef badge <br/>
+                    * Unlimited Globe uses daily<br/>
+                    * Unlock History feature <br/>
+                </p>
+                <a class="subscribe freeTrial" href="subscriberPage.html"> 7-day free trial </a>
+            </aside>
+            <!-- Background bubbles Around Membership -->
+                <div class="membership bubble">
+                    <div class="membership bubbleL">
+                    </div>
+                </div>
+                <div class="membership bubbleL">
+                    <div class="membership bubble">
+                        <div class="membership bubble"></div>
+                    </div>
+                </div>
+        </div>
         <div class="add">
             <label class="recipeBoxLabel">
                 <ion-icon class="icon" name="add"></ion-icon>
